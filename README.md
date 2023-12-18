@@ -1,5 +1,5 @@
 
-# victria_s_application7
+# squad7ichords-clarice
 
 Built with AndroidX Support
 
