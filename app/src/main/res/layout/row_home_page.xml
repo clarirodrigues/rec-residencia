@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="homePageRowModel" type="com.victriasapplication.app.modules.homepage.data.model.HomePageRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowrectanglethirtysix"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStyleteal_50cornerRadius">
+        <ImageView android:id="@+id/imageRectangleThirtySix"
+            android:layout_height="@dimen/_44pxh"
+            android:layout_marginBottom="@dimen/_8pxv"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_width="@dimen/_44pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_7pxh}"
+            imageRes="@{@drawable/img_rectangle27}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle27"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumntheunforgiven"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8pxv"
+            android:layout_marginStart="@dimen/_8pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_weight="0.78" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtTheUnforgiven"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{homePageRowModel.txtTheUnforgiven}"
+                style="@style/txtInterbold12_1" tools:text="@string/lbl_the_unforgiven"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtMetallicaOne"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{homePageRowModel.txtMetallicaOne}"
+                style="@style/txtInterregular12_1" tools:text="@string/lbl_metallica"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtRockOne"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{homePageRowModel.txtRockOne}"
+                style="@style/txtInterregular12_2" tools:text="@string/lbl_rock"/>
+        </LinearLayout>
+        <ImageButton
+            android:background="@drawable/rectangle_bg_blue_a700_87_radius_10"
+            android:id="@+id/btnVector"
+            android:layout_height="@dimen/_20pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_8pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_width="@dimen/_20pxh"
+            android:paddingHorizontal="@dimen/_6pxh"
+            android:paddingVertical="@dimen/_6pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_vector_2" tools:ignore="ContentDescription"/>
+    </LinearLayout>
+</layout>

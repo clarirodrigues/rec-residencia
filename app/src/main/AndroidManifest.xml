@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.victriasapplication.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.victriasapplication.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.victriasapplication.app.modules.perfil.ui.PerfilActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.victriasapplication.app.modules.msicaletraone.ui.MSicaLetraOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.victriasapplication.app.modules.curso.ui.CursoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.victriasapplication.app.modules.categoria.ui.CategoriaActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.victriasapplication.app.modules.msicaacordes.ui.MSicaAcordesActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.victriasapplication.app.modules.homepagecontainer.ui.HomePageContainerActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.victriasapplication.app.modules.msicaletra.ui.MSicaLetraActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.victriasapplication.app.modules.liestwo.ui.LiEsTwoActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.victriasapplication.app.modules.login.ui.LoginActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

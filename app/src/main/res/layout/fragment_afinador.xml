@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="afinadorVM" type="com.victriasapplication.app.modules.afinador.data.viewmodel.AfinadorVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnafinador"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_9pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_900">
+        <androidx.appcompat.widget.Toolbar
+            android:gravity="center_horizontal"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:id="@+id/linearRowafinador"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtAfinador"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.79"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{afinadorVM.afinadorModel.txtAfinador}"
+                    style="@style/txtIntermedium20_1" tools:text="@string/lbl_afinador"/>
+                <ImageView android:id="@+id/imageVector"
+                    android:layout_height="@dimen/_21pxh"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_marginStart="@dimen/_237pxh"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_width="@dimen/_21pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_vector_gray_400_21x21"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_vector_gray_400_21x21"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearAfinador"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_17pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylegray_900">
+            <View android:background="@color/white_A700_87"
+                android:id="@+id/lineLineTen"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_1pxh" android:layout_width="@dimen/_342pxh"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnafineoseuvio"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtAfineoseuvio"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_103pxh"
+                    android:layout_marginStart="@dimen/_104pxh"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{afinadorVM.afinadorModel.txtAfineoseuvio}"
+                    style="@style/txtIntermedium16_1" tools:text="@string/msg_afine_o_seu_vio"/>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearRowlinefourteen"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_1pxh"
+                    android:layout_marginTop="@dimen/_23pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylecornerRadius_1">
+                    <FrameLayout
+                        android:id="@+id/frameStacklinefourteen"
+                        android:layout_height="@dimen/_486pxv"
+                        android:layout_marginStart="@dimen/_46pxh" android:layout_width="@dimen/_32pxh">
+                        <View
+                            android:background="@drawable/rectangle_gradient_s_gray_400_87_e_gray_400_87"
+                            android:id="@+id/lineLineFourteen"
+                            android:layout_gravity="top|center"
+                            android:layout_height="@dimen/_464pxv"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:layout_marginEnd="@dimen/_14pxh"
+                            android:layout_marginStart="@dimen/_14pxh" android:layout_width="@dimen/_4pxh"/>
+                        <TextView android:ellipsize="end"
+                            android:gravity="center"
+                            android:id="@+id/txtGroupFifteen"
+                            android:layout_gravity="bottom|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="match_parent"
+                            android:paddingBottom="@dimen/_5pxv"
+                            android:paddingEnd="@dimen/_11pxh"
+                            android:paddingStart="@dimen/_11pxh"
+                            android:paddingTop="@dimen/_6pxv"
+                            android:singleLine="true"
+                            android:text="@{afinadorVM.afinadorModel.txtGroupFifteen}"
+                            style="@style/txtSolidRounded_1" tools:text="@string/lbl_e"/>
+                    </FrameLayout>
+                    <FrameLayout android:id="@+id/frameStacklinefifteen"
+                        android:layout_height="@dimen/_486pxv"
+                        android:layout_marginStart="@dimen/_12pxh" android:layout_width="@dimen/_32pxh">
+                        <View
+                            android:background="@drawable/rectangle_gradient_s_gray_400_87_e_gray_400_87"
+                            android:id="@+id/lineLineFifteen"
+                            android:layout_gravity="top|center"
+                            android:layout_height="@dimen/_464pxv"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:layout_marginEnd="@dimen/_14pxh"
+                            android:layout_marginStart="@dimen/_14pxh" android:layout_width="@dimen/_4pxh"/>
+                        <TextView android:ellipsize="end"
+                            android:gravity="center"
+                            android:id="@+id/txtGroupFourteen"
+                            android:layout_gravity="bottom|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="match_parent"
+                            android:paddingBottom="@dimen/_5pxv"
+                            android:paddingEnd="@dimen/_11pxh"
+                            android:paddingStart="@dimen/_10pxh"
+                            android:paddingTop="@dimen/_6pxv"
+                            android:singleLine="true"
+                            android:text="@{afinadorVM.afinadorModel.txtGroupFourteen}"
+                            style="@style/txtSolidRounded_1" tools:text="@string/lbl_a"/>
+                    </FrameLayout>
+                    <FrameLayout android:id="@+id/frameStacklinesixteen"
+                        android:layout_height="@dimen/_486pxv"
+                        android:layout_marginStart="@dimen/_12pxh" android:layout_width="@dimen/_32pxh">
+                        <View
+                            android:background="@drawable/rectangle_gradient_s_gray_400_87_e_gray_400_87"
+                            android:id="@+id/lineLineSixteen"
+                            android:layout_gravity="top|center"
+                            android:layout_height="@dimen/_464pxv"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:layout_marginEnd="@dimen/_14pxh"
+                            android:layout_marginStart="@dimen/_14pxh" android:layout_width="@dimen/_4pxh"/>
+                        <TextView android:ellipsize="end"
+                            android:gravity="center"
+                            android:id="@+id/txtGroupThirteen"
+                            android:layout_gravity="bottom|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="match_parent"
+                            android:paddingBottom="@dimen/_5pxv"
+                            android:paddingEnd="@dimen/_9pxh"
+                            android:paddingStart="@dimen/_11pxh"
+                            android:paddingTop="@dimen/_6pxv"
+                            android:singleLine="true"
+                            android:text="@{afinadorVM.afinadorModel.txtGroupThirteen}"
+                            style="@style/txtSolidRounded_1" tools:text="@string/lbl_d"/>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/frameStacklineseventeen"
+                        android:layout_height="@dimen/_486pxv"
+                        android:layout_marginStart="@dimen/_12pxh" android:layout_width="@dimen/_32pxh">
+                        <View
+                            android:background="@drawable/rectangle_gradient_s_gray_400_87_e_gray_400_87"
+                            android:id="@+id/lineLineSeventeen"
+                            android:layout_gravity="top|center"
+                            android:layout_height="@dimen/_464pxv"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:layout_marginEnd="@dimen/_14pxh"
+                            android:layout_marginStart="@dimen/_14pxh" android:layout_width="@dimen/_4pxh"/>
+                        <TextView android:ellipsize="end"
+                            android:gravity="center"
+                            android:id="@+id/txtGroupTwelve"
+                            android:layout_gravity="bottom|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="match_parent"
+                            android:paddingBottom="@dimen/_5pxv"
+                            android:paddingEnd="@dimen/_10pxh"
+                            android:paddingStart="@dimen/_10pxh"
+                            android:paddingTop="@dimen/_6pxv"
+                            android:singleLine="true"
+                            android:text="@{afinadorVM.afinadorModel.txtGroupTwelve}"
+                            style="@style/txtSolidRounded_1" tools:text="@string/lbl_g"/>
+                    </FrameLayout>
+                    <FrameLayout android:id="@+id/frameStackgroupeleven"
+                        android:layout_height="@dimen/_486pxv"
+                        android:layout_marginStart="@dimen/_12pxh" android:layout_width="@dimen/_32pxh">
+                        <FrameLayout
+                            android:id="@+id/frameStackvectortwo"
+                            android:layout_gravity="center"
+                            android:layout_height="@dimen/_486pxv"
+                            android:layout_marginEnd="@dimen/_8pxh"
+                            android:layout_marginStart="@dimen/_8pxh" android:layout_width="@dimen/_16pxh">
+                            <ImageView android:id="@+id/imageVectorTwo"
+                                android:layout_gravity="start"
+                                android:layout_height="@dimen/_486pxh"
+                                android:layout_width="@dimen/_16pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_vector2_486x16"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_vector2_486x16"/>
+                            <View
+                                android:background="@drawable/rectangle_gradient_s_gray_400_87_e_gray_400_87"
+                                android:id="@+id/lineLineEighteen"
+                                android:layout_gravity="top|center"
+                                android:layout_height="@dimen/_464pxv"
+                                android:layout_marginBottom="@dimen/_10pxv"
+                                android:layout_marginEnd="@dimen/_6pxh"
+                                android:layout_marginStart="@dimen/_6pxh" android:layout_width="@dimen/_4pxh"/>
+                        </FrameLayout>
+                        <TextView android:ellipsize="end"
+                            android:gravity="center"
+                            android:id="@+id/txtGroupEleven"
+                            android:layout_gravity="bottom|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="match_parent"
+                            android:paddingBottom="@dimen/_5pxv"
+                            android:paddingEnd="@dimen/_10pxh"
+                            android:paddingStart="@dimen/_11pxh"
+                            android:paddingTop="@dimen/_6pxv"
+                            android:singleLine="true"
+                            android:text="@{afinadorVM.afinadorModel.txtGroupEleven}"
+                            style="@style/txtSolidRoundedOutline" tools:text="@string/lbl_b"/>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/frameStacklinenineteen"
+                        android:layout_height="@dimen/_486pxv"
+                        android:layout_marginEnd="@dimen/_44pxh"
+                        android:layout_marginStart="@dimen/_12pxh" android:layout_width="@dimen/_32pxh">
+                        <View
+                            android:background="@drawable/rectangle_gradient_s_gray_400_87_e_gray_400_87"
+                            android:id="@+id/lineLineNineteen"
+                            android:layout_gravity="top|center"
+                            android:layout_height="@dimen/_464pxv"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:layout_marginEnd="@dimen/_14pxh"
+                            android:layout_marginStart="@dimen/_14pxh" android:layout_width="@dimen/_4pxh"/>
+                        <TextView android:ellipsize="end"
+                            android:gravity="center"
+                            android:id="@+id/txtGroupTen"
+                            android:layout_gravity="bottom|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="match_parent"
+                            android:paddingBottom="@dimen/_5pxv"
+                            android:paddingEnd="@dimen/_11pxh"
+                            android:paddingStart="@dimen/_11pxh"
+                            android:paddingTop="@dimen/_6pxv"
+                            android:singleLine="true"
+                            android:text="@{afinadorVM.afinadorModel.txtGroupTen}"
+                            style="@style/txtSolidRounded_1" tools:text="@string/lbl_e"/>
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearRowafrouxar"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_37pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtAfrouxar"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_weight="0.17"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{afinadorVM.afinadorModel.txtAfrouxar}"
+                        style="@style/txtInterregular12" tools:text="@string/lbl_afrouxar"/>
+                    <LinearLayout
+                        android:id="@+id/linearRowrectangle190"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_61pxh"
+                        android:layout_weight="0.83"
+                        android:layout_width="0dp" android:orientation="horizontal">
+                        <View
+                            android:background="@drawable/rectangle_bg_white_a700_3f_radius_2"
+                            android:id="@+id/lineRectangle190"
+                            android:layout_height="@dimen/_16pxv"
+                            android:layout_marginBottom="@dimen/_4pxv"
+                            android:layout_marginTop="@dimen/_4pxv"
+                            android:layout_weight="0.07" android:layout_width="0dp"/>
+                        <View
+                            android:background="@drawable/rectangle_bg_white_a700_7f_radius_2"
+                            android:id="@+id/lineRectangle189"
+                            android:layout_height="@dimen/_24pxv"
+                            android:layout_marginStart="@dimen/_56pxh"
+                            android:layout_weight="0.07" android:layout_width="0dp"/>
+                        <View
+                            android:background="@drawable/rectangle_bg_white_a700_3f_radius_2"
+                            android:id="@+id/lineRectangle191"
+                            android:layout_height="@dimen/_16pxv"
+                            android:layout_marginBottom="@dimen/_4pxv"
+                            android:layout_marginStart="@dimen/_56pxh"
+                            android:layout_marginTop="@dimen/_4pxv"
+                            android:layout_weight="0.07" android:layout_width="0dp"/>
+                        <View
+                            android:background="@drawable/rectangle_bg_deep_orange_a401_radius_2"
+                            android:id="@+id/lineRectangle192"
+                            android:layout_height="@dimen/_24pxv"
+                            android:layout_marginStart="@dimen/_46pxh"
+                            android:layout_weight="0.07" android:layout_width="0dp"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtApertar"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_3pxv"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_5pxv"
+                            android:layout_weight="0.73"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{afinadorVM.afinadorModel.txtApertar}"
+                            style="@style/txtInterregular12" tools:text="@string/lbl_apertar"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

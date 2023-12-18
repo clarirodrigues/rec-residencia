@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="categoriaRowModel" type="com.victriasapplication.app.modules.categoria.data.model.CategoriaRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowrectanglethirtysix"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylewhite_1">
+        <ImageView android:id="@+id/imageRectangleThirtySix"
+            android:layout_height="@dimen/_73pxh"
+            android:layout_marginBottom="@dimen/_8pxv"
+            android:layout_marginStart="@dimen/_8pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_width="@dimen/_73pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_8pxh}"
+            imageRes="@{@drawable/img_rectangle24}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle24"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnprasempre"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_14pxv"
+            android:layout_marginStart="@dimen/_9pxh"
+            android:layout_marginTop="@dimen/_16pxv"
+            android:layout_weight="0.38" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtPraSempre"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{categoriaRowModel.txtPraSempre}"
+                style="@style/txtIntersemibold16" tools:text="@string/lbl_pra_sempre"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtFernandinho"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{categoriaRowModel.txtFernandinho}"
+                style="@style/txtInterregular14" tools:text="@string/lbl_fernandinho"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtGospelReligiosOne"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{categoriaRowModel.txtGospelReligiosOne}"
+                style="@style/txtInterregular12_2" tools:text="@string/msg_gospel_religios"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumndificuldade"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_28pxv"
+            android:layout_marginStart="@dimen/_9pxh"
+            android:layout_marginTop="@dimen/_28pxv"
+            android:layout_weight="0.29" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtDificuldade"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{categoriaRowModel.txtDificuldade}"
+                style="@style/txtIntermedium12_2" tools:text="@string/lbl_dificuldade"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtFcil"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_21pxh"
+                android:layout_marginStart="@dimen/_21pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{categoriaRowModel.txtFcil}"
+                style="@style/txtIntermedium12_3" tools:text="@string/lbl_f_cil"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/imageVector"
+            android:layout_height="@dimen/_18pxh"
+            android:layout_marginBottom="@dimen/_35pxv"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_9pxh"
+            android:layout_marginTop="@dimen/_35pxv"
+            android:layout_width="@dimen/_21pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_vector_gray_400_18x21"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_vector_gray_400_18x21"/>
+    </LinearLayout>
+</layout>

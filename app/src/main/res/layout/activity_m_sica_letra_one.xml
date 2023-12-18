@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="mSicaLetraOneVM" type="com.victriasapplication.app.modules.msicaletraone.data.viewmodel.MSicaLetraOneVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearColumnarrowleft"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_42pxv"
+        android:layout_marginStart="@dimen/_1pxh"
+        android:layout_marginTop="@dimen/_11pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleblue_50">
+        <androidx.appcompat.widget.Toolbar android:gravity="start"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_19pxh"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowarrowleft"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageArrowleft"
+                    android:layout_height="@dimen/_12pxh"
+                    android:layout_marginBottom="@dimen/_8pxv"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_width="@dimen/_16pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrowleft"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtVamosaprender"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_76pxh"
+                    android:layout_weight="0.91"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{mSicaLetraOneVM.mSicaLetraOneModel.txtVamosaprender}"
+                    style="@style/txtIntermedium20" tools:text="@string/lbl_vamos_aprender"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearMsicaLetra"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyleblue_50">
+            <View android:background="@color/gray_300"
+                android:id="@+id/lineLineTen"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_15pxh"
+                android:layout_marginStart="@dimen/_15pxh" android:layout_width="@dimen/_342pxh"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnrectanglethirtysix"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15pxh"
+                android:layout_marginStart="@dimen/_15pxh"
+                android:layout_marginTop="@dimen/_23pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/linearRowrectanglethirtysix"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageRectangleThirtySix"
+                        android:layout_height="@dimen/_73pxh"
+                        android:layout_width="@dimen/_73pxh"
+                        android:scaleType="fitXY"
+                        cornerRadius="@{@dimen/_8pxh}"
+                        imageRes="@{@drawable/img_rectangle24}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle24"/>
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearColumnprasempre"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_6pxv"
+                        android:layout_marginStart="@dimen/_9pxh"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_weight="0.7"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtPraSempre"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_1pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{mSicaLetraOneVM.mSicaLetraOneModel.txtPraSempre}"
+                            style="@style/txtIntersemibold16" tools:text="@string/lbl_pra_sempre"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtFernandinho"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{mSicaLetraOneVM.mSicaLetraOneModel.txtFernandinho}"
+                            style="@style/txtInterregular14" tools:text="@string/lbl_fernandinho"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtGospelReligios"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_6pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{mSicaLetraOneVM.mSicaLetraOneModel.txtGospelReligios}"
+                            style="@style/txtInterregular12_2" tools:text="@string/msg_gospel_religios"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/imageSolarheartlin"
+                        android:layout_height="@dimen/_18pxh"
+                        android:layout_marginBottom="@dimen/_27pxv"
+                        android:layout_marginEnd="@dimen/_1pxh"
+                        android:layout_marginStart="@dimen/_9pxh"
+                        android:layout_marginTop="@dimen/_27pxv"
+                        android:layout_width="@dimen/_21pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_solarheartlin"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_solarheartlin"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearRowtom"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_1pxh"
+                    android:layout_marginTop="@dimen/_8pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStyleteal_50cornerRadius">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTom"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_3pxv"
+                        android:layout_marginStart="@dimen/_26pxh"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_weight="0.13"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{mSicaLetraOneVM.mSicaLetraOneModel.txtTom}"
+                        style="@style/txtIntermedium12_2" tools:text="@string/lbl_tom"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtC"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_3pxv"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_weight="0.04"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{mSicaLetraOneVM.mSicaLetraOneModel.txtC}"
+                        style="@style/txtIntermedium12_3" tools:text="@string/lbl_c"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtDificuldade"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_marginStart="@dimen/_32pxh"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_weight="0.32"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{mSicaLetraOneVM.mSicaLetraOneModel.txtDificuldade}"
+                        style="@style/txtIntermedium12_2" tools:text="@string/lbl_dificuldade"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtFcil"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_marginTop="@dimen/_3pxv"
+                        android:layout_weight="0.12"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{mSicaLetraOneVM.mSicaLetraOneModel.txtFcil}"
+                        style="@style/txtIntermedium12_3" tools:text="@string/lbl_f_cil"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtNAcordes"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_3pxv"
+                        android:layout_marginStart="@dimen/_32pxh"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_weight="0.32"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{mSicaLetraOneVM.mSicaLetraOneModel.txtNAcordes}"
+                        style="@style/txtIntermedium12_2" tools:text="@string/lbl_n_acordes"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtFive"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_3pxv"
+                        android:layout_marginEnd="@dimen/_26pxh"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_weight="0.07"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{mSicaLetraOneVM.mSicaLetraOneModel.txtFive}"
+                        style="@style/txtIntermedium12_3" tools:text="@string/lbl_05"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearRowacordes"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_35pxh"
+                    android:layout_marginStart="@dimen/_35pxh"
+                    android:layout_marginTop="@dimen/_23pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtAcordes"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_weight="0.62"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{mSicaLetraOneVM.mSicaLetraOneModel.txtAcordes}"
+                        style="@style/txtIntermedium16_3" tools:text="@string/lbl_acordes"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtLetra"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_128pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_weight="0.38"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{mSicaLetraOneVM.mSicaLetraOneModel.txtLetra}"
+                        style="@style/txtIntermedium16_2" tools:text="@string/lbl_letra"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearRowlineeleven"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <View android:background="@color/gray_400"
+                        android:id="@+id/lineLineEleven"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_weight="0.5" android:layout_width="0dp"/>
+                    <View android:background="@color/blue_800"
+                        android:id="@+id/lineLineTwelve"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_weight="0.5" android:layout_width="0dp"/>
+                </LinearLayout>
+                <FrameLayout android:id="@+id/frameStack"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_382pxv"
+                    android:layout_marginEnd="@dimen/_35pxh"
+                    android:layout_marginStart="@dimen/_35pxh"
+                    android:layout_marginTop="@dimen/_31pxv" android:layout_width="@dimen/_271pxh">
+                    <FrameLayout android:id="@+id/frameStackdescription"
+                        android:layout_gravity="bottom|start"
+                        android:layout_height="@dimen/_367pxv"
+                        android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_271pxh">
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txtDescription"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="@{mSicaLetraOneVM.mSicaLetraOneModel.txtDescription}"
+                            style="@style/txtCousineregular11" tools:text="@string/msg_new_blood_joins"/>
+                        <LinearLayout
+                            android:id="@+id/linearColumnrectangle179"
+                            android:layout_gravity="top|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_16pxv"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginStart="@dimen/_6pxh"
+                            android:layout_marginTop="@dimen/_16pxv"
+                            android:layout_width="match_parent" android:orientation="vertical">
+                            <FrameLayout
+                                android:id="@+id/frameChordFlag"
+                                android:layout_gravity="start"
+                                android:layout_height="@dimen/_25pxv"
+                                android:layout_marginEnd="@dimen/_82pxh"
+                                android:layout_marginStart="@dimen/_82pxh" android:layout_width="@dimen/_20pxh">
+                                <LinearLayout
+                                    android:id="@+id/linearColumnam"
+                                    android:layout_gravity="top|start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_10pxv"
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical" style="@style/groupStyleblue_800cornerRadius">
+                                    <TextView android:ellipsize="end"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtAm"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="@dimen/_1pxv"
+                                    android:layout_marginEnd="@dimen/_3pxh"
+                                    android:layout_marginStart="@dimen/_3pxh"
+                                    android:layout_marginTop="@dimen/_1pxv"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{mSicaLetraOneVM.mSicaLetraOneModel.txtAm}"
+                                    style="@style/txtCousineregular11_1" tools:text="@string/lbl_am"/>
+                                </LinearLayout>
+                                <View
+                                    android:background="@color/blue_800"
+                                    android:id="@+id/lineRectangle179"
+                                    android:layout_gravity="bottom|start"
+                                    android:layout_height="@dimen/_18pxv"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_1pxh"/>
+                            </FrameLayout>
+                            <FrameLayout
+                                android:id="@+id/frameChordFlag1"
+                                android:layout_gravity="end"
+                                android:layout_height="@dimen/_25pxv"
+                                android:layout_marginEnd="@dimen/_53pxh"
+                                android:layout_marginStart="@dimen/_53pxh"
+                                android:layout_marginTop="@dimen/_4pxv" android:layout_width="@dimen/_20pxh">
+                                <LinearLayout
+                                    android:id="@+id/linearColumnamOne"
+                                    android:layout_gravity="top|start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_10pxv"
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical" style="@style/groupStyleblue_800cornerRadius">
+                                    <TextView android:ellipsize="end"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtAmOne"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="@dimen/_1pxv"
+                                    android:layout_marginEnd="@dimen/_3pxh"
+                                    android:layout_marginStart="@dimen/_3pxh"
+                                    android:layout_marginTop="@dimen/_1pxv"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{mSicaLetraOneVM.mSicaLetraOneModel.txtAmOne}"
+                                    style="@style/txtCousineregular11_1" tools:text="@string/lbl_em"/>
+                                </LinearLayout>
+                                <View
+                                    android:background="@color/blue_800"
+                                    android:id="@+id/lineRectangle179One"
+                                    android:layout_gravity="bottom|start"
+                                    android:layout_height="@dimen/_18pxv"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_1pxh"/>
+                            </FrameLayout>
+                            <LinearLayout android:gravity="start"
+                                android:id="@+id/linearRowamTwo"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:layout_marginTop="@dimen/_4pxv"
+                                android:layout_width="match_parent" android:orientation="horizontal">
+                                <FrameLayout
+                                    android:id="@+id/frameChordFlag2"
+                                    android:layout_height="@dimen/_25pxv" android:layout_width="@dimen/_13pxh">
+                                    <LinearLayout
+                                    android:id="@+id/linearColumnamTwo"
+                                    android:layout_gravity="top|start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_10pxv"
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical" style="@style/groupStyleblue_800cornerRadius">
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtAmTwo"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="@dimen/_1pxv"
+                                    android:layout_marginEnd="@dimen/_3pxh"
+                                    android:layout_marginStart="@dimen/_3pxh"
+                                    android:layout_marginTop="@dimen/_1pxv"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{mSicaLetraOneVM.mSicaLetraOneModel.txtAmTwo}"
+                                    style="@style/txtCousineregular11_1" tools:text="@string/lbl_d"/>
+                                    </LinearLayout>
+                                    <View
+                                    android:background="@color/blue_800"
+                                    android:id="@+id/lineRectangle179Two"
+                                    android:layout_gravity="bottom|start"
+                                    android:layout_height="@dimen/_18pxv"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_1pxh"/>
+                                </FrameLayout>
+                                <FrameLayout
+                                    android:id="@+id/frameChordFlag3"
+                                    android:layout_height="@dimen/_25pxv"
+                                    android:layout_marginStart="@dimen/_142pxh" android:layout_width="@dimen/_20pxh">
+                                    <LinearLayout
+                                    android:id="@+id/linearColumnamThree"
+                                    android:layout_gravity="top|start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_10pxv"
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical" style="@style/groupStyleblue_800cornerRadius">
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtAmThree"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="@dimen/_1pxv"
+                                    android:layout_marginEnd="@dimen/_3pxh"
+                                    android:layout_marginStart="@dimen/_3pxh"
+                                    android:layout_marginTop="@dimen/_1pxv"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{mSicaLetraOneVM.mSicaLetraOneModel.txtAmThree}"
+                                    style="@style/txtCousineregular11_1" tools:text="@string/lbl_am"/>
+                                    </LinearLayout>
+                                    <View
+                                    android:background="@color/blue_800"
+                                    android:id="@+id/lineRectangle179Three"
+                                    android:layout_gravity="bottom|start"
+                                    android:layout_height="@dimen/_18pxv"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_1pxh"/>
+                                </FrameLayout>
+                            </LinearLayout>
+                            <FrameLayout
+                                android:id="@+id/frameChordFlag4"
+                                android:layout_gravity="end"
+                                android:layout_height="@dimen/_25pxv"
+                                android:layout_marginEnd="@dimen/_87pxh"
+                                android:layout_marginStart="@dimen/_87pxh"
+                                android:layout_marginTop="@dimen/_4pxv" android:layout_width="@dimen/_20pxh">
+                                <LinearLayout
+                                    android:id="@+id/linearColumnamFour"
+                                    android:layout_gravity="top|start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_10pxv"
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical" style="@style/groupStyleblue_800cornerRadius">
+                                    <TextView android:ellipsize="end"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtAmFour"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="@dimen/_1pxv"
+                                    android:layout_marginEnd="@dimen/_3pxh"
+                                    android:layout_marginStart="@dimen/_3pxh"
+                                    android:layout_marginTop="@dimen/_1pxv"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{mSicaLetraOneVM.mSicaLetraOneModel.txtAmFour}"
+                                    style="@style/txtCousineregular11_1" tools:text="@string/lbl_em"/>
+                                </LinearLayout>
+                                <View
+                                    android:background="@color/blue_800"
+                                    android:id="@+id/lineRectangle179Four"
+                                    android:layout_gravity="bottom|start"
+                                    android:layout_height="@dimen/_18pxv"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_1pxh"/>
+                            </FrameLayout>
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:gravity="center_horizontal"
+                                android:id="@+id/recyclerListamFive"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_8pxh"
+                                android:layout_marginTop="@dimen/_4pxv"
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                itemSpace="@{@dimen/_20pxh}"
+                                tools:itemCount="2" tools:listitem="@layout/row_listam_five"/>
+                            <FrameLayout
+                                android:id="@+id/frameChordFlag5"
+                                android:layout_gravity="start"
+                                android:layout_height="@dimen/_25pxv"
+                                android:layout_marginEnd="@dimen/_95pxh"
+                                android:layout_marginStart="@dimen/_95pxh"
+                                android:layout_marginTop="@dimen/_4pxv" android:layout_width="@dimen/_20pxh">
+                                <LinearLayout
+                                    android:id="@+id/linearColumnamSeven"
+                                    android:layout_gravity="top|start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_10pxv"
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical" style="@style/groupStyleblue_800cornerRadius">
+                                    <TextView android:ellipsize="end"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtAmSeven"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="@dimen/_1pxv"
+                                    android:layout_marginEnd="@dimen/_3pxh"
+                                    android:layout_marginStart="@dimen/_3pxh"
+                                    android:layout_marginTop="@dimen/_1pxv"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{mSicaLetraOneVM.mSicaLetraOneModel.txtAmSeven}"
+                                    style="@style/txtCousineregular11_1" tools:text="@string/lbl_am"/>
+                                </LinearLayout>
+                                <View
+                                    android:background="@color/blue_800"
+                                    android:id="@+id/lineRectangle179Seven"
+                                    android:layout_gravity="bottom|start"
+                                    android:layout_height="@dimen/_18pxv"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_1pxh"/>
+                            </FrameLayout>
+                            <LinearLayout android:gravity="end"
+                                android:id="@+id/linearRowamEight"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_21pxh"
+                                android:layout_marginStart="@dimen/_21pxh"
+                                android:layout_marginTop="@dimen/_20pxv"
+                                android:layout_width="wrap_content" android:orientation="horizontal">
+                                <FrameLayout
+                                    android:id="@+id/frameChordFlag6"
+                                    android:layout_height="@dimen/_25pxv"
+                                    android:layout_marginBottom="@dimen/_1pxv" android:layout_width="@dimen/_13pxh">
+                                    <LinearLayout
+                                    android:id="@+id/linearColumnamEight"
+                                    android:layout_gravity="top|start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_10pxv"
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical" style="@style/groupStyleblue_800cornerRadius">
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtAmEight"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="@dimen/_1pxv"
+                                    android:layout_marginEnd="@dimen/_3pxh"
+                                    android:layout_marginStart="@dimen/_3pxh"
+                                    android:layout_marginTop="@dimen/_1pxv"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{mSicaLetraOneVM.mSicaLetraOneModel.txtAmEight}"
+                                    style="@style/txtCousineregular11_1" tools:text="@string/lbl_c"/>
+                                    </LinearLayout>
+                                    <View
+                                    android:background="@color/blue_800"
+                                    android:id="@+id/lineRectangle179Eight"
+                                    android:layout_gravity="bottom|start"
+                                    android:layout_height="@dimen/_18pxv"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_1pxh"/>
+                                </FrameLayout>
+                                <FrameLayout
+                                    android:id="@+id/frameChordFlag7"
+                                    android:layout_height="@dimen/_25pxv"
+                                    android:layout_marginStart="@dimen/_81pxh"
+                                    android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_13pxh">
+                                    <LinearLayout
+                                    android:id="@+id/linearColumnamNine"
+                                    android:layout_gravity="top|start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_10pxv"
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical" style="@style/groupStyleblue_800cornerRadius">
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtAmNine"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="@dimen/_1pxv"
+                                    android:layout_marginEnd="@dimen/_3pxh"
+                                    android:layout_marginStart="@dimen/_3pxh"
+                                    android:layout_marginTop="@dimen/_1pxv"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{mSicaLetraOneVM.mSicaLetraOneModel.txtAmNine}"
+                                    style="@style/txtCousineregular11_1" tools:text="@string/lbl_g"/>
+                                    </LinearLayout>
+                                    <View
+                                    android:background="@color/blue_800"
+                                    android:id="@+id/lineRectangle179Nine"
+                                    android:layout_gravity="bottom|start"
+                                    android:layout_height="@dimen/_18pxv"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_1pxh"/>
+                                </FrameLayout>
+                            </LinearLayout>
+                            <FrameLayout
+                                android:id="@+id/frameChordFlag8"
+                                android:layout_gravity="start"
+                                android:layout_height="@dimen/_25pxv"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:layout_marginTop="@dimen/_4pxv" android:layout_width="@dimen/_20pxh">
+                                <LinearLayout
+                                    android:id="@+id/linearColumnamTen"
+                                    android:layout_gravity="top|start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_10pxv"
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical" style="@style/groupStyleblue_800cornerRadius">
+                                    <TextView android:ellipsize="end"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtAmTen"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="@dimen/_1pxv"
+                                    android:layout_marginEnd="@dimen/_3pxh"
+                                    android:layout_marginStart="@dimen/_3pxh"
+                                    android:layout_marginTop="@dimen/_1pxv"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{mSicaLetraOneVM.mSicaLetraOneModel.txtAmTen}"
+                                    style="@style/txtCousineregular11_1" tools:text="@string/lbl_am"/>
+                                </LinearLayout>
+                                <View
+                                    android:background="@color/blue_800"
+                                    android:id="@+id/lineRectangle179Ten"
+                                    android:layout_gravity="bottom|start"
+                                    android:layout_height="@dimen/_18pxv"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_1pxh"/>
+                            </FrameLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                    <FrameLayout android:id="@+id/frameChordFlag9"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_25pxv"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_6pxh" android:layout_width="@dimen/_20pxh">
+                        <LinearLayout
+                            android:id="@+id/linearColumnamEleven"
+                            android:layout_gravity="top|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical" style="@style/groupStyleblue_800cornerRadius">
+                            <TextView android:ellipsize="end"
+                                android:gravity="center_horizontal"
+                                android:id="@+id/txtAmEleven"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="@dimen/_1pxv"
+                                android:layout_marginEnd="@dimen/_3pxh"
+                                android:layout_marginStart="@dimen/_3pxh"
+                                android:layout_marginTop="@dimen/_1pxv"
+                                android:layout_width="match_parent"
+                                android:singleLine="true"
+                                android:text="@{mSicaLetraOneVM.mSicaLetraOneModel.txtAmEleven}"
+                                style="@style/txtCousineregular11_1" tools:text="@string/lbl_am"/>
+                        </LinearLayout>
+                        <View android:background="@color/blue_800"
+                            android:id="@+id/lineRectangle179Eleven"
+                            android:layout_gravity="bottom|start"
+                            android:layout_height="@dimen/_18pxv"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_1pxh"/>
+                    </FrameLayout>
+                    <FrameLayout android:id="@+id/frameChordFlag10"
+                        android:layout_gravity="top|end"
+                        android:layout_height="@dimen/_25pxv"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_82pxh"
+                        android:layout_marginStart="@dimen/_82pxh" android:layout_width="@dimen/_20pxh">
+                        <LinearLayout
+                            android:id="@+id/linearColumnamTwelve"
+                            android:layout_gravity="top|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical" style="@style/groupStyleblue_800cornerRadius">
+                            <TextView android:ellipsize="end"
+                                android:gravity="center_horizontal"
+                                android:id="@+id/txtAmTwelve"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="@dimen/_1pxv"
+                                android:layout_marginEnd="@dimen/_3pxh"
+                                android:layout_marginStart="@dimen/_3pxh"
+                                android:layout_marginTop="@dimen/_1pxv"
+                                android:layout_width="match_parent"
+                                android:singleLine="true"
+                                android:text="@{mSicaLetraOneVM.mSicaLetraOneModel.txtAmTwelve}"
+                                style="@style/txtCousineregular11_1" tools:text="@string/lbl_em"/>
+                        </LinearLayout>
+                        <View android:background="@color/blue_800"
+                            android:id="@+id/lineRectangle179Twelve"
+                            android:layout_gravity="bottom|start"
+                            android:layout_height="@dimen/_18pxv"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_1pxh"/>
+                    </FrameLayout>
+                </FrameLayout>
+            </LinearLayout>
+            <View android:background="@color/gray_300"
+                android:id="@+id/lineLineThirteen"
+                android:layout_height="@dimen/_1pxv"
+                android:layout_marginTop="@dimen/_19pxv" android:layout_width="@dimen/_374pxh"/>
+            <LinearLayout android:id="@+id/linearRowdecrement"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15pxh"
+                android:layout_marginStart="@dimen/_15pxh"
+                android:layout_marginTop="@dimen/_19pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:id="@+id/linearStepper"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.53"
+                    android:layout_width="0dp"
+                    android:orientation="horizontal" style="@style/groupStyleamber_A700cornerRadius">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtDecrement"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_12pxv"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_12pxv"
+                        android:layout_weight="0.13"
+                        android:layout_width="0dp"
+                        android:lineSpacingExtra="@dimen/_3pxh"
+                        android:singleLine="true"
+                        android:text="@{mSicaLetraOneVM.mSicaLetraOneModel.txtDecrement}"
+                        style="@style/txtInterregular12_3" tools:text="@string/lbl_a"/>
+                    <View
+                        android:background="@drawable/rectangle_bg_yellow_700"
+                        android:id="@+id/lineSeparator"
+                        android:layout_height="@dimen/_18pxv"
+                        android:layout_marginBottom="@dimen/_11pxv"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_weight="0.01" android:layout_width="0dp"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtDecrementOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_9pxv"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_weight="0.63"
+                        android:layout_width="0dp"
+                        android:lineSpacingExtra="@dimen/_4pxh"
+                        android:singleLine="true"
+                        android:text="@{mSicaLetraOneVM.mSicaLetraOneModel.txtDecrementOne}"
+                        style="@style/txtInterregular16" tools:text="@string/lbl_texto"/>
+                    <View
+                        android:background="@drawable/rectangle_bg_yellow_700"
+                        android:id="@+id/lineSeparatorOne"
+                        android:layout_height="@dimen/_18pxv"
+                        android:layout_marginBottom="@dimen/_11pxv"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_weight="0.01" android:layout_width="0dp"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtIncrement"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_7pxv"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_7pxv"
+                        android:layout_weight="0.21"
+                        android:layout_width="0dp"
+                        android:lineSpacingExtra="@dimen/_5pxh"
+                        android:singleLine="true"
+                        android:text="@{mSicaLetraOneVM.mSicaLetraOneModel.txtIncrement}"
+                        style="@style/txtInterregular20" tools:text="@string/lbl_a"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearStepper1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_19pxh"
+                    android:layout_weight="0.47"
+                    android:layout_width="0dp"
+                    android:orientation="horizontal" style="@style/groupStyleamber_A700cornerRadius">
+                    <View
+                        android:background="@drawable/rectangle_bg_yellow_700"
+                        android:id="@+id/lineSeparatorTwo"
+                        android:layout_height="@dimen/_18pxv"
+                        android:layout_marginBottom="@dimen/_11pxv"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_weight="0.01" android:layout_width="0dp"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtDecrementTwo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_9pxv"
+                        android:layout_weight="0.98"
+                        android:layout_width="0dp"
+                        android:lineSpacingExtra="@dimen/_4pxh"
+                        android:singleLine="true"
+                        android:text="@{mSicaLetraOneVM.mSicaLetraOneModel.txtDecrementTwo}"
+                        style="@style/txtInterregular16" tools:text="@string/lbl_v_deo_aula"/>
+                    <View
+                        android:background="@drawable/rectangle_bg_yellow_700"
+                        android:id="@+id/lineSeparatorThree"
+                        android:layout_height="@dimen/_18pxv"
+                        android:layout_marginBottom="@dimen/_11pxv"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_weight="0.01" android:layout_width="0dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

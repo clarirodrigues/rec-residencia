@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="perfilRowModel" type="com.victriasapplication.app.modules.perfil.data.model.PerfilRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowconcluaaomeno"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStyledeep_purple_A100cornerRadius">
+        <TextView android:id="@+id/txtConcluaaomeno"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_7pxv"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_weight="0.59" android:layout_width="0dp"
+            android:text="@{perfilRowModel.txtConcluaaomeno}"
+            style="@style/txtInterregular12" tools:text="@string/msg_conclua_ao_meno"/>
+        <LinearLayout android:id="@+id/linearRowgroupthirtysix"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_14pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_54pxh"
+            android:layout_marginTop="@dimen/_14pxv"
+            android:layout_weight="0.41" android:layout_width="0dp" android:orientation="horizontal">
+            <ImageView android:id="@+id/imageGroupThirtySix"
+                android:layout_height="@dimen/_2pxh"
+                android:layout_marginBottom="@dimen/_6pxv"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_width="@dimen/_40pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_group36"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_group36"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtForty"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_1pxv"
+                android:layout_marginStart="@dimen/_4pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_weight="0.27" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{perfilRowModel.txtForty}"
+                style="@style/txtInterregular10_4" tools:text="@string/lbl_40"/>
+            <ImageView android:id="@+id/imageGroupOne"
+                android:layout_height="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_24pxh"
+                android:layout_width="@dimen/_16pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_group_white_a700"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_group_white_a700"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

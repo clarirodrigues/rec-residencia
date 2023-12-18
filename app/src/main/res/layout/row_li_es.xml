@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="liEsRowModel" type="com.victriasapplication.app.modules.lies.data.model.LiEsRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameCard"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700cornerRadius">
+        <View
+            android:background="@drawable/rectangle_bg_gray_400_border_white_a700_33_radius_5_005"
+            android:id="@+id/viewRectangle115"
+            android:layout_gravity="bottom|start"
+            android:layout_height="@dimen/_10pxv"
+            android:layout_marginBottom="@dimen/_45pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_45pxv" android:layout_width="@dimen/_286pxh"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtTitle"
+            android:layout_gravity="bottom|end"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_23pxv"
+            android:layout_marginEnd="@dimen/_63pxh"
+            android:layout_marginStart="@dimen/_63pxh"
+            android:layout_marginTop="@dimen/_23pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{liEsRowModel.txtTitle}"
+            style="@style/txtInterregular10" tools:text="@string/msg_pr_ximo_n_vel_e"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtPontosCounter"
+            android:layout_gravity="bottom|start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_23pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_23pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{liEsRowModel.txtPontosCounter}"
+            style="@style/txtInterregular10" tools:text="@string/lbl_8_908_pontos"/>
+        <LinearLayout android:id="@+id/linearColumntitleOne"
+            android:layout_gravity="top|end"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_38pxv"
+            android:layout_marginEnd="@dimen/_27pxh"
+            android:layout_marginStart="@dimen/_27pxh"
+            android:layout_marginTop="@dimen/_38pxv"
+            android:layout_width="wrap_content" android:orientation="vertical">
+            <TextView android:id="@+id/txtTitleOne"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@{liEsRowModel.txtTitleOne}"
+                style="@style/txtInterbold21" tools:text="@string/msg_pratique_e_suba"/>
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtTitleTwo"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_3pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.02" android:singleLine="true"
+                android:text="@{liEsRowModel.txtTitleTwo}"
+                style="@style/txtInterregular13" tools:text="@string/msg_voc_est_indo"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtTitleThree"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{liEsRowModel.txtTitleThree}"
+                style="@style/txtInterbold21_1" tools:text="@string/lbl_8_908"/>
+        </LinearLayout>
+        <View
+            android:background="@drawable/rectangle_bg_blue_a700_radius_5"
+            android:id="@+id/viewRectangle116"
+            android:layout_gravity="bottom|start"
+            android:layout_height="@dimen/_10pxv"
+            android:layout_marginBottom="@dimen/_45pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_45pxv" android:layout_width="@dimen/_202pxh"/>
+        <ImageView android:id="@+id/imageFrameNinetyTwo"
+            android:layout_gravity="bottom|end"
+            android:layout_height="@dimen/_39pxh"
+            android:layout_marginBottom="@dimen/_30pxv"
+            android:layout_marginEnd="@dimen/_25pxh"
+            android:layout_marginStart="@dimen/_25pxh"
+            android:layout_marginTop="@dimen/_30pxv"
+            android:layout_width="@dimen/_39pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_frame92"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_frame92"/>
+        <ImageView android:id="@+id/imageImageOne"
+            android:layout_gravity="top|start"
+            android:layout_height="@dimen/_142pxh"
+            android:layout_marginBottom="@dimen/_13pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_13pxv"
+            android:layout_width="@dimen/_142pxh"
+            android:scaleType="fitXY" imageRes="@{@drawable/img_image1}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_image1"/>
+    </FrameLayout>
+</layout>

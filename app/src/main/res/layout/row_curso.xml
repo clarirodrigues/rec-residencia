@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="cursoRowModel" type="com.victriasapplication.app.modules.curso.data.model.CursoRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowaula1comoaf"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylegreen_A100cornerRadius">
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtAula1Comoaf"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_11pxv"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_weight="0.75" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{cursoRowModel.txtAula1Comoaf}"
+            style="@style/txtIntermedium14_3" tools:text="@string/msg_aula_1_como_af"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtTime"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_12pxv"
+            android:layout_marginStart="@dimen/_22pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_weight="0.17" android:layout_width="0dp"
+            android:paddingBottom="@dimen/_1pxv"
+            android:paddingEnd="@dimen/_8pxh"
+            android:paddingStart="@dimen/_8pxh"
+            android:paddingTop="@dimen/_1pxv" android:singleLine="true"
+            android:text="@{cursoRowModel.txtTime}"
+            style="@style/txtSolidRounded_2" tools:text="@string/lbl_05_32"/>
+        <ImageButton
+            android:background="@drawable/rectangle_bg_green_600_87_radius_10"
+            android:id="@+id/btnVectorOne"
+            android:layout_height="@dimen/_20pxh"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="@dimen/_20pxh"
+            android:paddingHorizontal="@dimen/_6pxh"
+            android:paddingVertical="@dimen/_6pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_vector_green_600" tools:ignore="ContentDescription"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listdedilhadosfceRowModel" type="com.victriasapplication.app.modules.aulas.data.model.ListdedilhadosfceRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowdedilhadosfce"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStyledeep_orange_A200cornerRadius">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumndedilhadosfce"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_14pxv"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_weight="0.94" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtDedilhadosFce"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listdedilhadosfceRowModel.txtDedilhadosFce}"
+                style="@style/txtInterbold12" tools:text="@string/msg_dedilhados_f_ce"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtInicianteTwo"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listdedilhadosfceRowModel.txtInicianteTwo}"
+                style="@style/txtInterregular12" tools:text="@string/lbl_iniciante"/>
+        </LinearLayout>
+        <ImageButton
+            android:background="@drawable/rectangle_bg_white_a700_87_radius_10"
+            android:id="@+id/btnVectorFive"
+            android:layout_height="@dimen/_20pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_21pxv"
+            android:layout_width="@dimen/_20pxh"
+            android:paddingHorizontal="@dimen/_6pxh"
+            android:paddingVertical="@dimen/_6pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_vector_white_a700_79x79" tools:ignore="ContentDescription"/>
+    </LinearLayout>
+</layout>

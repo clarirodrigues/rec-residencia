@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">victria_s_application7</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="lbl_me_atraiu">Me Atraiu</string>
+  <string name="lbl_the_unforgiven">The Unforgiven</string>
+  <string name="msg_transi_es_de_a">Transições de Acordes Velozes</string>
+  <string name="msg_cursos_recomend">Cursos recomendados</string>
+  <string name="msg_acordes_b_sicos">Acordes Básicos e Ritmos...</string>
+  <string name="msg_primeiro_contat">Primeiro contato</string>
+  <string name="lbl_n_vel">Nível:</string>
+  <string name="lbl_tutoriais">Tutoriais</string>
+  <string name="lbl_tom_c">Tom: C</string>
+  <string name="lbl_home">Home</string>
+  <string name="lbl_thiaguinho">Thiaguinho</string>
+  <string name="msg_z_neto_cris">Zé Neto &amp; Cris...</string>
+  <string name="msg_pr_ximo_n_vel_e2">Próximo nível em: 25,000</string>
+  <string name="msg_he_s_sub_dued">"he's sub-dued.&#13;
+               
+Through constant pain disgrace, the 
+
+young boy learns their rules.&#13;
+
+With time the child draws in this 
+
+whipping boy done wrong.&#13;
+
+
+Deprived of all his thoughts, the young 
+
+man struggles on and on.&#13;
+
+
+He knows,  oo, a  vow unto  his own that
+
+never from this day&#13;
+
+
+his will they'll take a - way."</string>
+  <string name="lbl_categorias">Categorias</string>
+  <string name="msg_compartilhe_seu">Compartilhe seus vídeos e mostre a sua evolução.</string>
+  <string name="msg_pr_ximo_n_vel_e3">Próximo nível em: 40,000</string>
+  <string name="lbl_black_pumas">Black Pumas</string>
+  <string name="lbl_05_32">05:32</string>
+  <string name="lbl_8_908">8,908</string>
+  <string name="lbl_metallica">Metallica</string>
+  <string name="msg_gospel_religios">Gospel/Religioso</string>
+  <string name="msg_compartilhe_um">Compartilhe um vídeo tocando uma música completa</string>
+  <string name="msg_como_funciona_u2">Como funciona um violão</string>
+  <string name="lbl_vamos_aprender">Vamos aprender</string>
+  <string name="lbl_deixa">Deixa</string>
+  <string name="msg_continue_de_ond">Continue de onde parou</string>
+  <string name="lbl_criando_acordes">Criando acordes</string>
+  <string name="lbl_n_acordes">Nº Acordes:</string>
+  <string name="msg_aula_8_como_af">Aula 8: Como afinar as cordas</string>
+  <string name="msg_new_blood_joins">"New blood joins this earth  and quickly
+            
+he's sub-dued.&#13;
+               
+Through constant pain disgrace, the 
+
+young boy learns their rules.&#13;
+
+With time the child draws in this 
+
+whipping boy done wrong.&#13;
+
+
+Deprived of all his thoughts, the young 
+
+man struggles on and on.&#13;
+
+
+He knows,  oo, a  vow unto  his own that
+
+never from this day&#13;
+
+
+his will they'll take a - way."</string>
+  <string name="lbl_pop">Pop</string>
+  <string name="msg_afine_o_seu_vio">Afine o seu violão</string>
+  <string name="lbl_tom">Tom:</string>
+  <string name="lbl_em">Em</string>
+  <string name="msg_conclua_ao_meno">Conclua ao menos um dos curso na aba de Aulas</string>
+  <string name="lbl_8_908_pontos">8,908 pontos</string>
+  <string name="lbl_ver_mais">Ver mais</string>
+  <string name="lbl_a">A</string>
+  <string name="msg_aula_4_como_af">Aula 4: Como afinar as cordas</string>
+  <string name="msg_finalize_os_12">Finalize os 12 primeiros exercícios na aba de Lições</string>
+  <string name="lbl_b">B</string>
+  <string name="lbl_entrar">Entrar</string>
+  <string name="lbl_c">C</string>
+  <string name="lbl_d">D</string>
+  <string name="lbl_e">E</string>
+  <string name="lbl_fernandinho">Fernandinho</string>
+  <string name="lbl_f">F</string>
+  <string name="lbl_g">G</string>
+  <string name="lbl_lugar_secreto">Lugar Secreto</string>
+  <string name="lbl_40">40%</string>
+  <string name="msg_continue_with_f">Continue with Facebook</string>
+  <string name="msg_new_blood_joins2">New blood joins this earth  and quickly
+</string>
+  <string name="msg_continue_with_a">Continue with Apple</string>
+  <string name="lbl_afrouxar">Afrouxar</string>
+  <string name="msg_voc_est_indo">Você está indo bem.</string>
+  <string name="msg_esqueceu_a_senh">Esqueceu a senha?</string>
+  <string name="msg_continue_with_g">Continue with Google</string>
+  <string name="lbl_senha">Senha</string>
+  <string name="lbl_acordes">Acordes</string>
+  <string name="lbl_it_s_this_love">It\u2019s This Love</string>
+  <string name="lbl_v_deo_aula">Vídeo aula</string>
+  <string name="lbl_mpb">MPB</string>
+  <string name="lbl_aline_barros">Aline Barros</string>
+  <string name="msg_aula_7_como_af">Aula 7: Como afinar as cordas</string>
+  <string name="lbl_novidades">Novidades</string>
+  <string name="lbl_iniciante">Iniciante</string>
+  <string name="msg_aula_3_como_af">Aula 3: Como afinar as cordas</string>
+  <string name="lbl_m_dulo_1">Módulo 1</string>
+  <string name="lbl_bob_marley">Bob Marley</string>
+  <string name="lbl_dificuldade">Dificuldade:</string>
+  <string name="msg_aprenda_sobre_o">Aprenda sobre o \u201cFá\u201d e toque \u201cCai Cai Balão\u201dpara subir de nível!</string>
+  <string name="lbl_capotraste">CAPOTRASTE</string>
+  <string name="lbl_artistas">Artistas</string>
+  <string name="msg_reproduza_o_que">Reproduza o que aprendeu usando o afinador e assista o vídeo de um dos nossos professores tocando esta música para atingir o próximo nível!</string>
+  <string name="msg_pratique_e_suba">Pratique e suba de nível!</string>
+  <string name="lbl_27">27%</string>
+  <string name="lbl_the_unforgiv">The Unforgiv...</string>
+  <string name="lbl_recomendadas">Recomendadas</string>
+  <string name="msg_melhore_sua_peg">Melhore Sua Pegada de Violão</string>
+  <string name="lbl_rock">Rock</string>
+  <string name="lbl_rita_lee">Rita Lee</string>
+  <string name="lbl_m_dio">Médio</string>
+  <string name="lbl_li_es">Lições</string>
+  <string name="msg_no_f_fa_a_a">No \u201cFá\u201d faça a \u201cPestana\u201d, segurando seu dedo indicador em todas as cordas do violão.</string>
+  <string name="msg_pr_ximo_n_vel_a">Próximo nível a seguir.</string>
+  <string name="lbl_jorge_silva">Jorge Silva</string>
+  <string name="msg_pr_ximo_n_vel_e">Próximo nível em: 10,000</string>
+  <string name="msg_aula_6_como_af">Aula 6: Como afinar as cordas</string>
+  <string name="lbl_jorge_silva2">\@jorge.silva</string>
+  <string name="msg_usando_o_capotr">Usando o capotraste </string>
+  <string name="lbl_ou_continue_com">Ou continue com</string>
+  <string name="lbl_deserto">Deserto</string>
+  <string name="lbl_taylor_swift">Taylor Swift</string>
+  <string name="lbl_apertar">Apertar</string>
+  <string name="msg_lorem_ipsum_dol">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. </string>
+  <string name="lbl_letra">Letra</string>
+  <string name="msg_aula_2_como_af">Aula 2: Como afinar as cordas</string>
+  <string name="lbl_cazuza">Cazuza</string>
+  <string name="lbl_am">Am</string>
+  <string name="lbl_f_cil">Fácil</string>
+  <string name="lbl_10_000_pontos">10, 000 pontos</string>
+  <string name="lbl_email">Email</string>
+  <string name="lbl_0">0%</string>
+  <string name="msg_cai_cai_bal_o">Cai cai balão
+
+Cai cai balão
+
+Aqui na minha mão
+
+
+Não cai não, não cai não, não cai não
+
+Cai na rua do sabão</string>
+  <string name="lbl_05">05</string>
+  <string name="lbl_avan_ar">Avançar</string>
+  <string name="msg_aula_1_como_af">Aula 1: Como afinar as cordas</string>
+  <string name="msg_compartilhe_a_s">Compartilhe a sua paixão pela música!</string>
+  <string name="lbl_gabriela_rocha">Gabriela Rocha</string>
+  <string name="lbl_jess_aguiar">Jessé Aguiar</string>
+  <string name="msg_clique_aqui_e_v">Clique aqui e vamos finalizar as aulas.</string>
+  <string name="lbl_jeov_jireh">Jeová Jireh</string>
+  <string name="lbl_pra_sempre">Pra Sempre</string>
+  <string name="lbl_tom2">TOM</string>
+  <string name="lbl_sertanejo">Sertanejo</string>
+  <string name="lbl_reputation">Reputation</string>
+  <string name="lbl_intermedi_rio">Intermediário</string>
+  <string name="msg_m_sicas_favorit">Músicas favoritas</string>
+  <string name="lbl_clica_no_rec">Clica no REC!</string>
+  <string name="lbl_maria_mar_al">Maria Marçal</string>
+  <string name="lbl_bar_o_verm">Barão Verm...</string>
+  <string name="msg_dedilhados_f_ce">Dedilhados Fáceis: Técn...</string>
+  <string name="lbl_afinador">Afinador</string>
+  <string name="msg_voc_est_quase">Você está quase lá!</string>
+  <string name="lbl_al_vio">Alívio</string>
+  <string name="msg_como_funciona_u">Como Funciona um Violão</string>
+  <string name="lbl_am7">Am7</string>
+  <string name="lbl_texto">Texto</string>
+  <string name="msg_largado_as_tra">Largado as Traças</string>
+  <string name="msg_aula_5_como_af">Aula 5: Como afinar as cordas</string>
+  <string name="lbl_aulas">Aulas</string>
+<string name="msg_please_enter_valid_email">Please enter valid email</string>
+</resources>

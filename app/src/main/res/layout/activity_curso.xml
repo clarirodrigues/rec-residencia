@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="cursoVM" type="com.victriasapplication.app.modules.curso.data.viewmodel.CursoVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnarrowleft"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_57pxv"
+        android:layout_marginEnd="@dimen/_16pxh"
+        android:layout_marginStart="@dimen/_16pxh"
+        android:layout_marginTop="@dimen/_16pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleblue_50">
+        <androidx.core.widget.NestedScrollView
+            android:clipToPadding="false" android:fillViewport="true"
+            android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearCurso"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <ImageView android:id="@+id/imageArrowleft"
+                    android:layout_height="@dimen/_12pxh"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_4pxh"
+                    android:layout_width="@dimen/_16pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrowleft"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+                <FrameLayout android:id="@+id/frameStackrectangle180"
+                    android:layout_height="@dimen/_194pxv"
+                    android:layout_marginTop="@dimen/_24pxv" android:layout_width="match_parent">
+                    <ImageView android:id="@+id/imageRectangle180"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_194pxh"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        cornerRadius="@{@dimen/_16pxh}"
+                        imageRes="@{@drawable/img_rectangle180}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle180"/>
+                    <LinearLayout android:id="@+id/linearColumnvector"
+                        android:layout_gravity="bottom|start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_15pxv"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_15pxv"
+                        android:layout_width="wrap_content" android:orientation="vertical">
+                        <ImageButton
+                            android:background="@drawable/rectangle_bg_white_a700_87_radius_22_5"
+                            android:id="@+id/btnVector"
+                            android:layout_gravity="end"
+                            android:layout_height="@dimen/_45pxh"
+                            android:layout_marginEnd="@dimen/_21pxh"
+                            android:layout_marginStart="@dimen/_21pxh"
+                            android:layout_width="@dimen/_45pxh"
+                            android:paddingHorizontal="@dimen/_13pxh"
+                            android:paddingVertical="@dimen/_13pxv"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_vector_white_a700_79x79" tools:ignore="ContentDescription"/>
+                        <TextView android:ellipsize="end"
+                            android:gravity="start"
+                            android:id="@+id/txtAula5Comoaf"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_41pxv"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{cursoVM.cursoModel.txtAula5Comoaf}"
+                            style="@style/txtIntermedium14_2" tools:text="@string/msg_aula_5_como_af"/>
+                    </LinearLayout>
+                </FrameLayout>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtComofuncionau"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_8pxh"
+                    android:layout_marginTop="@dimen/_15pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{cursoVM.cursoModel.txtComofuncionau}"
+                    style="@style/txtIntermedium20" tools:text="@string/msg_como_funciona_u2"/>
+                <TextView android:gravity="center_horizontal"
+                    android:id="@+id/txtDescription"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_8pxh"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{cursoVM.cursoModel.txtDescription}"
+                    style="@style/txtInterregular12_1" tools:text="@string/msg_lorem_ipsum_dol"/>
+                <View android:background="@color/gray_300"
+                    android:id="@+id/lineLineTen"
+                    android:layout_height="@dimen/_1pxv"
+                    android:layout_marginTop="@dimen/_23pxv" android:layout_width="@dimen/_343pxh"/>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearRowmdulocounter"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_23pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStyleteal_50cornerRadius">
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearColumnmdulocounter"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_7pxv"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_7pxv"
+                        android:layout_weight="0.95"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtMduloCounter"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{cursoVM.cursoModel.txtMduloCounter}"
+                            style="@style/txtIntermedium12_4" tools:text="@string/lbl_m_dulo_1"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtPrimeirocontat"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_1pxv"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{cursoVM.cursoModel.txtPrimeirocontat}"
+                            style="@style/txtIntermedium16" tools:text="@string/msg_primeiro_contat"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/imageArrowdown"
+                        android:layout_height="@dimen/_6pxh"
+                        android:layout_marginBottom="@dimen/_22pxv"
+                        android:layout_marginEnd="@dimen/_21pxh"
+                        android:layout_marginTop="@dimen/_22pxv"
+                        android:layout_width="@dimen/_14pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_arrowdown"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_arrowdown"/>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerCurso"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16pxv"
+                    android:layout_width="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    itemSpace="@{@dimen/_16pxh}" tools:itemCount="8" tools:listitem="@layout/row_curso"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>
